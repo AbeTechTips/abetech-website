@@ -356,6 +356,21 @@ article .icon {
   cursor: default;
 }
 
+.article-container-work {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: space-around;
+}
+
+article .work {
+  display: flex;
+  width: 20rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
 /* PROJECTS SECTION */
 
 #projects {
