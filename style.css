@@ -356,6 +356,7 @@ article .icon {
   cursor: default;
 }
 
+/* Experience Updates 
 .article-container-work {
   display: flex;
   text-align: initial;
@@ -370,7 +371,8 @@ article .work {
   width: 20rem;
   justify-content: space-around;
   gap: 0.5rem;
-}
+} */
+
 /* PROJECTS SECTION */
 
 #projects {
