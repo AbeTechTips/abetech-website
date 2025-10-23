@@ -356,6 +356,33 @@ article .icon {
   cursor: default;
 }
 
+/* RECOMMENDATIONS SECTION */
+#recommendations {
+  position: relative;
+}
+
+.recommendations-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.recommendations-article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article.recommendations {
+  display: flex;
+  width: 50rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
 /* PROJECTS SECTION */
 
 #projects {
