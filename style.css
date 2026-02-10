@@ -197,6 +197,12 @@ section {
   margin-bottom: 1rem;
 }
 
+.section__text__p3 {
+  font-size: 1rem;
+  margin-bottom: 1.75rem;
+  max-width: 30rem;
+}
+
 .title {
   font-size: 3rem;
   text-align: center;
