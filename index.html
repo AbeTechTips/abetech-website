@@ -1,464 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to AbeTech.live</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" type="image/x-icon" href="assets/profile-pic.png">
-  </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-57RGX3MQHS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abraham Lora — IT Systems Engineer</title>
+  <meta name="description" content="IT Systems Engineer with 7+ years of experience in identity management, endpoint security, SaaS administration, and IT automation." />
+  <link rel="icon" href="assets/profile-pic.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-57RGX3MQHS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-57RGX3MQHS');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-  gtag('config', 'G-57RGX3MQHS');
-</script>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Abraham Lora</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#recommendations">Recommendations</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+  <!-- NAV -->
+  <header id="site-header">
+    <nav id="navbar">
+      <a href="#" class="logo">Abraham Lora</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Abraham Lora</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#recommendations" onclick="toggleMenu()">Recommendations</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Abraham Lora profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Abraham Lora</h1>
-        <p class="section__text__p2">IT Systems Engineer</p>
-        <p class="section__text__p3">I design and support scalable IT systems that improve security, automate IT processes, and reduce operational friction.</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="location.href='#about'"
-          >
-            About Me
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/abraham-lora-palma'"
-          />
-          <img
-            src="./assets/blog-icon.png"
-            alt="My Blog"
-            class="icon"
-            onclick="location.href='https://blog.abetech.live'"
-          />
-        </div>
-      </div>
-      
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>7+ years <br />IT Systems Administration</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Middlesex County College<br />A.S. Networking and Support</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I am a detail-oriented IT professional with over 7 years of experience providing comprehensive IT Administration, device management, and process improvement in fast-paced environments. 
-              I am proficient with SaaS tools like Okta, Google Workspace, and Slack, and experienced in creating technical documentation and automating workflows to improve efficiency. 
-              I am adept at mentoring teams, managing cloud infrastructure, and enhancing IT operations to support a scaling organization. 
-              I am very passionate about technology and love to support others achieve their professional growth.
-              I am constantly learning new technologies and skills.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Skills</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>IT Systems Administration</h3>
-                  <p>Managing identity, endpoints, SaaS tools, and core IT infrastructure at scale</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Identity & Access Management (IAM)</h3>
-                  <p>Okta user lifecycle, access controls, MFA, and onboarding/offboarding workflows</p>
-                </div>
-              </article>
-              
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Endpoint & Device Management</h3>
-                  <p>macOS and Windows device lifecycle using Jamf, Intune, Kandji, and Mosyle</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SaaS Administration</h3>
-                  <p>Google Workspace, Slack, Atlassian, and third-party SaaS integrations</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>IT Automation & Workflows</h3>
-                  <p>Reducing manual work through automation, scripts, and workflow tools</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Technical Leadership & Mentorship</h3>
-                  <p>Supporting teammates, improving documentation, and raising team capability</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Certifications & Professional Training</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Microsoft</h3>
-                  <p>Microsoft Technology Associate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Okta</h3>
-                  <p>Okta Certified Professional</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Atlassian</h3>
-                  <p>Jira & Confluence</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Workato</h3>
-                  <p>Workato Automation Pro 1 & 2</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>OWASP</h3>
-                  <p>OWASP Top 10 Training</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Generative AI</h3>
-                  <p>Responsible AI usage</p>
-                </div>
-              </article>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#recommendations">Recommendations</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
 
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-badge">Open to new opportunities</span>
+        <h1>Hi, I'm <span class="accent">Abraham Lora</span></h1>
+        <p class="hero-subtitle">IT Systems Engineer</p>
+        <p class="hero-desc">I design and support scalable IT systems that improve security, automate processes, and reduce operational friction — supporting teams at every stage of growth.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#about" class="btn btn-ghost">About Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/abraham-lora-palma" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://blog.abetech.live" target="_blank" rel="noopener" aria-label="Blog" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </a>
+          <a href="mailto:inquiries@abetech.live" aria-label="Email" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-img-ring">
+          <img src="./assets/profile-pic.png" alt="Abraham Lora" />
+        </div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-value">7+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-value">6</span>
+        <span class="stat-label">Certifications</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-value">IAM</span>
+        <span class="stat-label">Okta & Identity Expert</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-value">MDM</span>
+        <span class="stat-label">Jamf · Intune · Kandji</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header">
+      <p class="section-tag">Get to Know Me</p>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="./assets/about-pic.jpeg" alt="Abraham Lora" />
+      </div>
+      <div class="about-content">
+        <p>I'm a detail-oriented IT professional with over <strong>7 years of experience</strong> in IT Administration, device management, and process improvement in fast-paced environments.</p>
+        <p>I'm proficient with SaaS tools like <strong>Okta</strong>, <strong>Google Workspace</strong>, and <strong>Slack</strong>, and experienced in creating technical documentation and automating workflows to improve efficiency.</p>
+        <p>I'm adept at mentoring teams, managing cloud infrastructure, and enhancing IT operations to support a scaling organization. I'm passionate about technology and love helping others achieve their professional growth.</p>
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="about-card-icon">🎓</div>
+            <div>
+              <h4>Education</h4>
+              <p>Middlesex County College<br><small>A.S. Networking and Support</small></p>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>New Jersey, USA</p>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#recommendations'"
-      />
-    </section>
-    <section id="recommendations">
-      <p class="section__text__p1">Read My</p>
-      <h1 class="title" style="margin-bottom: 3rem;">Recommendations</h1>
-      <div class="recommendations-details-container">
-        <div class="recommendations-containers">
-          <div class="recommendations-details-containers">
-            <div class="recommendations-article-container">
-              <article class="recommendations">
-                <img src="./assets/recommendations/chrisglass.jpeg" style="height: 120px; width: 120px; border-radius: 50%;">
-                <div>
-                  <H2>Chris Glass</H2>
-                  <h3>Apple Business Pro</h3>
-                  <p>There’s not enough space/characters for me to say all the great things about Abraham. Always a team champion, always the first to tackle a tough issue, always asking to learn and participate in areas that he’s less proficient at. </p>
-                </div>
-              </article>
-              <article class="recommendations">
-                <img src="./assets/recommendations/danielp.jpeg" style="height: 120px; width: 120px; border-radius: 50%;">
-                <div>
-                  <H2>Daniel P.</H2>
-                  <h3>IT Ops & IT Service Management Professional</h3>
-                  <p>Abraham is THE BEST!! His technical skills and knowledge were something I relied upon daily to resolve urgent issues and deliver on project deadlines. His passion and drive are unmatched! He looks at everything as an opportunity to grow, or to help others grow. But above all, he wholeheartedly brings his best every single day.</p>
-                </div>
-              </article>
-              <article class="recommendations">
-                <img src="./assets/recommendations/judyphu.jpeg" style="height: 120px; width: 120px; border-radius: 50%;">
-                <div>
-                  <H2>Judy Phu</H2>
-                  <h3>Senior IT Support Tech @ Roblox</h3>
-                  <p>Abraham is THE BEST!! His technical skills and knowledge were something I relied upon daily to resolve urgent issues and deliver on project deadlines. His passion and drive are unmatched! He looks at everything as an opportunity to grow, or to help others grow. But above all, he wholeheartedly brings his best every single day.</p>
-                </div>
-              </article>
-              
-            </div>
-          </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-header">
+      <p class="section-tag">What I Work With</p>
+      <h2>Skills &amp; Certifications</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Core Competencies</h3>
+        <div class="tag-cloud">
+          <span class="tag">IT Systems Administration</span>
+          <span class="tag">Identity &amp; Access Management</span>
+          <span class="tag">Endpoint &amp; Device Management</span>
+          <span class="tag">SaaS Administration</span>
+          <span class="tag">IT Automation &amp; Workflows</span>
+          <span class="tag">Technical Leadership</span>
+          <span class="tag">Process Improvement</span>
+          <span class="tag">Cloud Infrastructure</span>
+          <span class="tag">Security Hardening</span>
+          <span class="tag">IT Documentation</span>
         </div>
-      </div>      
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Getting Started with Docker Containers</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://blog.abetech.live/start-your-homelab-journey-using-docker-and-portainer/'"
-              >
-                Learn More
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://links.abetech.live'"
-              >
-                Live Demo
-              </button> -->
+      </div>
+      <div class="skill-card">
+        <h3>Tools &amp; Platforms</h3>
+        <div class="tag-cloud">
+          <span class="tag tag-blue">Okta</span>
+          <span class="tag tag-blue">Google Workspace</span>
+          <span class="tag tag-blue">Jamf</span>
+          <span class="tag tag-blue">Microsoft Intune</span>
+          <span class="tag tag-blue">Kandji</span>
+          <span class="tag tag-blue">Mosyle</span>
+          <span class="tag tag-blue">Slack</span>
+          <span class="tag tag-blue">Jira</span>
+          <span class="tag tag-blue">Confluence</span>
+          <span class="tag tag-blue">Workato</span>
+        </div>
+      </div>
+      <div class="skill-card skill-card-full">
+        <h3>Certifications</h3>
+        <div class="cert-grid">
+          <div class="cert-item">
+            <div class="cert-badge" style="background:#0078d4">MS</div>
+            <div>
+              <strong>Microsoft Technology Associate</strong>
+              <span>Microsoft</span>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Creating a Virtual Networking Lab</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://youtu.be/JZdLOLswkKo'"
-              >
-                Learn more
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://links.abetech.live'"
-              >
-                Live Demo
-              </button> -->
+          <div class="cert-item">
+            <div class="cert-badge" style="background:#00297a">OK</div>
+            <div>
+              <strong>Okta Certified Professional</strong>
+              <span>Okta</span>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+          <div class="cert-item">
+            <div class="cert-badge" style="background:#0052cc">AT</div>
+            <div>
+              <strong>Jira &amp; Confluence</strong>
+              <span>Atlassian</span>
             </div>
-            <h2 class="experience-sub-title project-title">Build your own NAS with TrueNAS</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://blog.abetech.live/store-files-like-a-pro-with-truenas/'"
-              >
-                Learn More
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://links.abetech.live'"
-              >
-                Live Demo
-              </button> -->
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge" style="background:#e55b2b">WK</div>
+            <div>
+              <strong>Automation Pro I &amp; II</strong>
+              <span>Workato</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge" style="background:#0c4a6e">OW</div>
+            <div>
+              <strong>OWASP Top 10 Training</strong>
+              <span>OWASP</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-badge" style="background:#6366f1">AI</div>
+            <div>
+              <strong>Responsible AI Usage</strong>
+              <span>Generative AI</span>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:inquiries@abetech.live">inquiries@abetech.live</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/link-icon.png"
-            alt="Links icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://links.abetech.live">Socials</a></p>
+    </div>
+  </section>
+
+  <!-- RECOMMENDATIONS -->
+  <section id="recommendations">
+    <div class="section-header">
+      <p class="section-tag">What Others Say</p>
+      <h2>Recommendations</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="quote-mark">&ldquo;</div>
+        <p>There's not enough space/characters for me to say all the great things about Abraham. Always a team champion, always the first to tackle a tough issue, always asking to learn and participate in areas that he's less proficient at.</p>
+        <div class="testimonial-author">
+          <img src="./assets/recommendations/chrisglass.jpeg" alt="Chris Glass" />
+          <div>
+            <strong>Chris Glass</strong>
+            <span>Apple Business Pro</span>
+          </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#recommendations">Recommendations</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+      <div class="testimonial-card">
+        <div class="quote-mark">&ldquo;</div>
+        <p>Abraham is THE BEST!! His technical skills and knowledge were something I relied upon daily to resolve urgent issues and deliver on project deadlines. His passion and drive are unmatched! He looks at everything as an opportunity to grow, or to help others grow. But above all, he wholeheartedly brings his best every single day.</p>
+        <div class="testimonial-author">
+          <img src="./assets/recommendations/danielp.jpeg" alt="Daniel P." />
+          <div>
+            <strong>Daniel P.</strong>
+            <span>IT Ops &amp; IT Service Management Professional</span>
+          </div>
         </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">&ldquo;</div>
+        <p>Abraham is THE BEST!! His technical skills and knowledge were something I relied upon daily to resolve urgent issues and deliver on project deadlines. His passion and drive are unmatched! He looks at everything as an opportunity to grow, or to help others grow. But above all, he wholeheartedly brings his best every single day.</p>
+        <div class="testimonial-author">
+          <img src="./assets/recommendations/judyphu.jpeg" alt="Judy Phu" />
+          <div>
+            <strong>Judy Phu</strong>
+            <span>Senior IT Support Tech @ Roblox</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-cta">
+      <a href="https://www.linkedin.com/in/abraham-lora-palma" target="_blank" rel="noopener" class="btn btn-outline">View all on LinkedIn &rarr;</a>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="section-header">
+      <p class="section-tag">Latest Writing</p>
+      <h2>From the Blog</h2>
+    </div>
+    <div id="blog-grid" class="blog-grid">
+      <!-- Populated by script.js via RSS feed, falls back to static posts -->
+    </div>
+    <div class="section-cta">
+      <a href="https://blog.abetech.live" target="_blank" rel="noopener" class="btn btn-outline">View All Posts &rarr;</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header">
+      <p class="section-tag">Let's Connect</p>
+      <h2>Get in Touch</h2>
+    </div>
+    <p class="contact-desc">I'm open to new opportunities, collaborations, and conversations about IT strategy. Feel free to reach out through any of the channels below.</p>
+    <div class="contact-grid">
+      <a href="mailto:inquiries@abetech.live" class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <div>
+          <strong>Email</strong>
+          <span>inquiries@abetech.live</span>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/abraham-lora-palma" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </div>
+        <div>
+          <strong>LinkedIn</strong>
+          <span>abraham-lora-palma</span>
+        </div>
+      </a>
+      <a href="https://links.abetech.live" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <div>
+          <strong>All Socials</strong>
+          <span>links.abetech.live</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">Abraham Lora</span>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#recommendations">Recommendations</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <p>Copyright &#169; 2022-2026 Abraham Lora. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+      <p class="footer-copy">&copy; 2022&ndash;2026 Abraham Lora. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
